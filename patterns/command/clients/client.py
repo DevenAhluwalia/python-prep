@@ -49,4 +49,4 @@ class Client:
 			on_command=light_on_command,
 			off_command=light_off_command)
 
-		self.remote_control = remote_control
+		self.remote_control: RemoteControl = remote_control

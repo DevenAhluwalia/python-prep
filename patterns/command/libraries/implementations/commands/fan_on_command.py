@@ -5,7 +5,7 @@ class FanOnCommand(Command):
 
 	def __init__(
 		self,
-		control) -> None:
+		control: FanControl) -> None:
 
 		self.control = control
 
