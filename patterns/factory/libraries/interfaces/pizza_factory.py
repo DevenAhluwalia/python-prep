@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from libraries.interfaces.pizza import Pizza
 
-class pizza_factory(ABC):
+class PizzaFactory(ABC):
 	
 	@abstractmethod
 	def create_pizza(

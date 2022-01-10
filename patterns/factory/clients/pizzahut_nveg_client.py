@@ -1,9 +1,15 @@
-from libraries.implementations.factories.pizzahut_nveg_pizza_factory import pizzahut_nveg_pizza_factory 
+from libraries.implementations.factories.pizzahut_nveg_pizza_factory import PizzahutNonvegPizzaFactory 
 from libraries.interfaces.pizza import Pizza
+from libraries.interfaces.pizza_factory import PizzaFactory
+from libraries.interfaces.client import Client
 
-class Client:
+
+class PizzahutNonvegPizzaClient(Client):
 
 	@staticmethod
 	def get_pizza() -> Pizza:
 
-		return pizzahut_nveg_pizza_factory().create_pizza()
+		factory: PizzaFactory = PizzahutNonvegPizzaFactory()
+		pizza: Pizza = factory.create_pizza()
+
+		return pizza

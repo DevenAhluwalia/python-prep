@@ -1,13 +1,13 @@
-from libraries.interfaces.pizza_factory import pizza_factory
+from libraries.interfaces.pizza_factory import PizzaFactory
 from libraries.interfaces.pizza import Pizza
-from libraries.implementations.products.pizzahut_veg_pizza import VegPizzahutPizza
+from libraries.implementations.products.pizzahut_veg_pizza import PizzahutVegPizza
 
-class pizzahut_veg_pizza_factory(pizza_factory):
+class PizzahutVegPizzaFactory(PizzaFactory):
 	
 	@staticmethod
 	def create_pizza() -> Pizza:
 
-		result: Pizza = VegPizzahutPizza()
+		result: Pizza = PizzahutVegPizza()
 
 		print(f"Kitchen is using ingredients: {','.join(result.ingredients)}")
 

@@ -1,9 +1,15 @@
-from libraries.implementations.factories.dominos_veg_pizza_factory import dominos_veg_pizza_factory 
+from libraries.implementations.factories.dominos_veg_pizza_factory import DominosVegPizzaFactory 
 from libraries.interfaces.pizza import Pizza
+from libraries.interfaces.pizza_factory import PizzaFactory
+from libraries.interfaces.client import Client
 
-class Client:
+
+class DominosVegPizzaClient(Client):
 
 	@staticmethod
 	def get_pizza() -> Pizza:
 
-		return dominos_veg_pizza_factory().create_pizza()
+		factory: PizzaFactory = DominosVegPizzaFactory()
+		pizza: Pizza = factory.create_pizza()
+
+		return pizza

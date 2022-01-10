@@ -1,6 +1,6 @@
 from libraries.interfaces.pizza import Pizza
 
-class NonvegPizzahutPizza(Pizza):
+class PizzahutNonvegPizza(Pizza):
 
 	@property
 	def pizza_name(self):
