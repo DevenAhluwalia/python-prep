@@ -3,10 +3,10 @@ from clients.client import Client
 
 class OnOrOffClient(Client):
 
-	def __init__(
-		self) -> None:
+	# def __init__(
+	# 	self) -> None:
 
-		super(OnOrOffClient, self).__init__()
+	# 	super(OnOrOffClient, self).__init__()
 
 
 	def execute(

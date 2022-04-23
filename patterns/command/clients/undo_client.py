@@ -3,10 +3,10 @@ from clients.client import Client
 
 class UndoClient(Client):
 
-	def __init__(
-		self) -> None:
+	# def __init__(
+	# 	self) -> None:
 
-		super(UndoClient, self).__init__()
+	# 	super(UndoClient, self).__init__()
 
 
 	def execute(
