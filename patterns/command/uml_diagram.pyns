@@ -1,0 +1,48 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'Command', 'x':201, 'y':306, 'width':69, 'height':64, 'attrs': '', 'meths': 'execute|undo'}
+{'type':'umlshape', 'id':'ABC', 'x':841, 'y':517, 'width':35, 'height':24, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'RemoteControl', 'x':599, 'y':467, 'width':119, 'height':124, 'attrs': 'off_controls|on_controls|undo_command', 'meths': '__init__|on_button_pressed|set_command|undo'}
+{'type':'umlshape', 'id':'FanFastCommand', 'x':34, 'y':659, 'width':128, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'FanControl', 'x':177, 'y':467, 'width':94, 'height':84, 'attrs': '', 'meths': 'fast|off|on|slow'}
+{'type':'umlshape', 'id':'FanSlowCommand', 'x':0, 'y':865, 'width':128, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'TvDecreaseChannelNumberCommand', 'x':477, 'y':298, 'width':262, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'TvControl', 'x':250, 'y':1078, 'width':148, 'height':84, 'attrs': '', 'meths': 'decrease_channel_number|increase_channel_number|off|on'}
+{'type':'umlshape', 'id':'TvIncreaseChannelNumberCommand', 'x':503, 'y':1026, 'width':262, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'FanOffCommand', 'x':245, 'y':667, 'width':119, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'FanOnCommand', 'x':15, 'y':262, 'width':111, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'LightOffCommand', 'x':723, 'y':92, 'width':136, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'LightControl', 'x':12, 'y':-1, 'width':111, 'height':64, 'attrs': '', 'meths': 'off|on'}
+{'type':'umlshape', 'id':'LightOnCommand', 'x':177, 'y':10, 'width':128, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'NoopCommand', 'x':382, 'y':503, 'width':102, 'height':64, 'attrs': '', 'meths': 'execute|undo'}
+{'type':'umlshape', 'id':'TvOffCommand', 'x':286, 'y':874, 'width':111, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'TvOnCommand', 'x':658, 'y':882, 'width':102, 'height':94, 'attrs': 'control', 'meths': '__init__|execute|undo'}
+{'type':'umlshape', 'id':'Client', 'x':371, 'y':35, 'width':196, 'height':134, 'attrs': 'fan_on_off_switch|fan_slow_fast_switch|light_switch|remote_control|switches|tv_change_channel_number_switch|tv_on_off_switch', 'meths': '__init__'}
+{'type':'umlshape', 'id':'OnOrOffClient', 'x':201, 'y':156, 'width':119, 'height':54, 'attrs': '', 'meths': 'execute'}
+{'type':'umlshape', 'id':'UndoClient', 'x':0, 'y':156, 'width':94, 'height':54, 'attrs': '', 'meths': 'execute'}
+{'type':'edge', 'id':'Command_to_ABC', 'source':'Command', 'target':'ABC', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Command_to_RemoteControl', 'source':'Command', 'target':'RemoteControl', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FanFastCommand_to_Command', 'source':'FanFastCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FanControl_to_FanFastCommand', 'source':'FanControl', 'target':'FanFastCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FanSlowCommand_to_Command', 'source':'FanSlowCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FanControl_to_FanSlowCommand', 'source':'FanControl', 'target':'FanSlowCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'TvDecreaseChannelNumberCommand_to_Command', 'source':'TvDecreaseChannelNumberCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'TvControl_to_TvDecreaseChannelNumberCommand', 'source':'TvControl', 'target':'TvDecreaseChannelNumberCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'TvIncreaseChannelNumberCommand_to_Command', 'source':'TvIncreaseChannelNumberCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'TvControl_to_TvIncreaseChannelNumberCommand', 'source':'TvControl', 'target':'TvIncreaseChannelNumberCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FanOffCommand_to_Command', 'source':'FanOffCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FanControl_to_FanOffCommand', 'source':'FanControl', 'target':'FanOffCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FanOnCommand_to_Command', 'source':'FanOnCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FanControl_to_FanOnCommand', 'source':'FanControl', 'target':'FanOnCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'LightOffCommand_to_Command', 'source':'LightOffCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'LightControl_to_LightOffCommand', 'source':'LightControl', 'target':'LightOffCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'LightOnCommand_to_Command', 'source':'LightOnCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'LightControl_to_LightOnCommand', 'source':'LightControl', 'target':'LightOnCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'NoopCommand_to_Command', 'source':'NoopCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'TvOffCommand_to_Command', 'source':'TvOffCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'TvControl_to_TvOffCommand', 'source':'TvControl', 'target':'TvOffCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'TvOnCommand_to_Command', 'source':'TvOnCommand', 'target':'Command', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'TvControl_to_TvOnCommand', 'source':'TvControl', 'target':'TvOnCommand', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'RemoteControl_to_Client', 'source':'RemoteControl', 'target':'Client', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'OnOrOffClient_to_Client', 'source':'OnOrOffClient', 'target':'Client', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'UndoClient_to_Client', 'source':'UndoClient', 'target':'Client', 'uml_edge_type': 'generalisation'}

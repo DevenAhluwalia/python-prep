@@ -10,3 +10,15 @@ class FanControl:
 	def off() -> None:
 
 		print("Turning Fan OFF")
+
+
+	@staticmethod
+	def slow() -> None:
+
+		print("Turning Fan SLOW")
+
+
+	@staticmethod
+	def fast() -> None:
+
+		print("Turning Fan FAST")

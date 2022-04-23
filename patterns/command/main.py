@@ -1,14 +1,8 @@
 from clients.on_off_client import OnOrOffClient
 from clients.undo_client import UndoClient
 
-print("Executing on_off_client")
-print()
-
+print(f"\n\nExecuting on_off_client \n{'-'*50}\n")
 OnOrOffClient().execute()
-print()
 
-print("Executing undo_client")
-print()
-
+print(f"\n\nExecuting undo_client \n{'-'*50}\n")
 UndoClient().execute()
-print()

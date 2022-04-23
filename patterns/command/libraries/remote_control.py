@@ -5,7 +5,7 @@ class RemoteControl:
 
 		def __init__(
 			self,
-			num_of_slotes: int=3) -> None:
+			num_of_slotes: int=4) -> None:
 
 			self.on_controls = [NoopCommand] * num_of_slotes
 			self.off_controls = [NoopCommand] * num_of_slotes
